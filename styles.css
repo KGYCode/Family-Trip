@@ -15,3 +15,19 @@
 .map-fallback{padding:32px;color:#163746}
 .map-top{top:auto;bottom:115px;right:17px;max-width:min(420px,calc(100% - 34px))}
 @media(max-width:600px){.map-controls{left:9px;top:9px;max-width:calc(100% - 18px);padding:9px}.map-places{max-height:70px}.map-top{display:none}.map-note{left:9px;right:9px;bottom:9px;font-size:10px;padding:9px}}
+
+
+/* Overview journey progress: 9-day city timeline. */
+.trip-progress-card{margin:24px 0 28px;padding:20px 20px 16px;background:#102533;border:1px solid #35515f;border-radius:18px}
+.trip-progress-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:18px}
+.trip-progress-head h2{margin:6px 0 0;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.04em}
+.trip-progress-head p{margin:0;max-width:480px;color:#b8cbd1;font-size:13px;line-height:1.6}
+.trip-progress-line{position:relative;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;padding-top:4px}
+.trip-progress-line:before{content:"";position:absolute;left:5%;right:5%;top:22px;height:4px;border-radius:999px;background:#42616d}
+.trip-progress-step{position:relative;z-index:1;text-align:center;min-width:0}
+.trip-progress-node{width:40px;height:40px;border-radius:999px;margin:0 auto 10px;display:grid;place-items:center;color:#07202b;font-weight:900;font-size:13px;border:2px solid #ffffff66}
+.trip-progress-date{font-size:13px;font-weight:800;color:#ecf5f6}
+.trip-progress-place{display:inline-block;max-width:100%;margin-top:7px;padding:4px 10px;border-radius:999px;border:1px solid #4d6d79;font-size:12px;font-weight:700;color:#eaf4f4;overflow-wrap:anywhere}
+.trip-progress-detail{margin-top:7px;font-size:11px;line-height:1.45;color:#9fb8c0;min-height:32px;overflow-wrap:anywhere}
+@media(max-width:920px){.trip-progress-line{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:20px}.trip-progress-line:before{display:none}}
+@media(max-width:600px){.trip-progress-head{display:block}.trip-progress-head p{margin-top:10px}.trip-progress-line{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.trip-progress-detail{min-height:0}}
