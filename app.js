@@ -38,7 +38,22 @@
     renderDay(TRIP.days[idx]);
   }
   function renderOverview(){
+    const timeline=(TRIP.overviewTimeline||[]).map((step,i)=>{
+      const color=step.color||'#71ddd1';
+      return '<div class="trip-progress-step">' +
+        '<div class="trip-progress-node" style="background:'+escape(color)+';box-shadow:0 0 0 6px '+escape(color+'22')+';">'+(i+1)+'</div>' +
+        '<div class="trip-progress-date">'+escape(step.date)+'</div>' +
+        '<div class="trip-progress-place" style="border-color:'+escape(color+'66')+';background:'+escape(color+'18')+';">'+escape(step.place)+'</div>' +
+        '<div class="trip-progress-detail">'+escape(step.detail||'')+'</div></div>';
+    }).join('');
     $('overall').innerHTML=`<div class="overview"><div class="big-label">THE FAMILY JOURNEY · NINE DAYS</div><h1>${escape(TRIP.title)}</h1><p class="lede">${escape(TRIP.dates)} · ${escape(TRIP.subtitle)}</p>
+      <section class="trip-progress-card" aria-label="날짜별 체류 도시">
+        <div class="trip-progress-head">
+          <div><div class="big-label">TRAVEL FLOW</div><h2>날짜별 체류 도시</h2></div>
+          <p>12/11–12/19 · 여행 중 머무는 도시와 주요 이동을 한눈에 확인하세요.</p>
+        </div>
+        <div class="trip-progress-line">${timeline}</div>
+      </section>
       <div class="overview-grid">
         <div class="summary-card"><span>ATLANTA BASE</span><h3>선택한 숙소</h3><p>${escape(TRIP.baseHotel)}<br>${escape(TRIP.baseAddress)}<br>12/11·12·14·17·18 숙박</p></div>
         <div class="summary-card"><span>CHATTANOOGA</span><h3>12/13–14 · 1박 2일</h3><p>Ruby Falls · Lookout Mountain · Rock City<br>내 차로 왕복<br><b>호텔 미정</b></p></div>
