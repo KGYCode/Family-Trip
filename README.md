@@ -45,7 +45,7 @@ python build_standalone.py
 - **12/15 Atlanta 호텔→공항:** Uber; Miami에서는 Uber
 - **12/17 Atlanta 공항→호텔:** Uber 임시 계획 (사용자 확인 가능)
 - **12/19 국제선 공항 드롭오프:** 사용자 자가용 예정 (확인 필요)
-- **Yebar:** 사용자 지정 이름 유지, 지도는 Buckhead Village 근처 임시 핀. Y BAR e Ristorante와 같은 매장인지 미확정
+- **Yeppa & Co. (Buckhead):** 12/11 지정 식당. 306 Buckhead Ave NE, Atlanta, GA 30305. 공식 홈페이지: https://www.yhospitality.com/yeppa-buckhead
 
 ## 지도 정확도
 
