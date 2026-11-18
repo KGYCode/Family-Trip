@@ -16,7 +16,6 @@ window.TRIP_DATA = {
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
     {label:'Ruby Falls · Rock City 입장권 및 시간 확인', group:'예약', done:false},
     {label:'Biscayne Bay 크루즈 운항시간 및 예약 확인', group:'예약', done:false},
-    {label:'Yebar = Y BAR e Ristorante 맞는지 확인', group:'확인', done:false},
     {label:'12/19 출국편·공항 도착 목표시간 확인', group:'확인', done:false}
   ],
   days: [
