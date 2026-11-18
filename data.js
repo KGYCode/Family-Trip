@@ -22,13 +22,13 @@ window.TRIP_DATA = {
     {
       date:'12.11', weekday:'금요일', area:'ATLANTA', headline:'환영하는 첫날', caption:'공항 픽업부터 Buckhead의 저녁까지', accent:'#e4bd84',
       hero:'https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?auto=format&fit=crop&w=1800&q=85',
-      highlight:'첫날은 컨디션에 맞게 · 지정 식당 Yebar 유지', overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
+      highlight:'첫날은 컨디션에 맞게 · 지정 식당 Yeppa & Co. 방문', overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
       stops:[
         {name:'Hartsfield–Jackson Atlanta International Airport', short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'부모님 도착 · 내 차로 픽업',image:'',url:'https://www.atl.com/'},
         {name:'Cortland Oleander',short:'집 방문',lat:33.8340,lng:-84.3260,type:'방문',desc:'집에 잠시 들러 짐과 동선을 정리',image:'',url:'https://cortland.com/apartments/cortland-oleander/'},
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'선택한 Atlanta 숙소 · 예약 여부는 TODO',image:'',url:'https://www.marriott.com/en-us/hotels/atlep-courtyard-atlanta-executive-park-emory/overview/'},
         {name:'Buckhead Village',short:'Buckhead',lat:33.8396,lng:-84.3791,type:'관광',desc:'거리·상점·카페 가볍게 둘러보기',image:'',url:'https://www.buckheadvillagedistrict.com/'},
-        {name:'Yebar (Y BAR e Ristorante 확인 필요)',short:'Yebar',lat:33.8397,lng:-84.3786,type:'식사',desc:'지정 식당 · 정확한 지점명 최종 확인',image:'',url:'https://www.yhospitality.com/our-restaurants'},
+        {name:'Yeppa & Co. (Buckhead)',short:'Yeppa & Co.',lat:33.8397,lng:-84.3786,type:'식사',desc:'이탈리안 레스토랑 · 306 Buckhead Ave NE, Atlanta, GA 30305 · 식사 예약 권장',image:'',url:'https://www.yhospitality.com/yeppa-buckhead'},
         {name:'Costco Wholesale (Atlanta area)',short:'Costco',lat:33.8730,lng:-84.3775,type:'쇼핑',desc:'장보기 · 도착시간에 따라 순서 조정',image:'',url:'https://www.costco.com/warehouse-locations'}
       ],modes:['car','car','car','walk','car']
     },
