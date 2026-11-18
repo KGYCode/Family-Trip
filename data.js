@@ -6,6 +6,18 @@ window.TRIP_DATA = {
   baseHotel: 'Courtyard by Marriott Atlanta Executive Park/Emory',
   baseAddress: '1236 Executive Park Drive, Atlanta, GA 30329',
   note: '지도 연결선은 개략적인 이동 순서이며 실제 도로·항로를 표시하지 않습니다. 실시간 경로는 각 구간의 길찾기 버튼에서 확인하세요.',
+  // Overview 날짜별 체류 도시 — 내용을 바꾸면 상단 진행 바에도 반영됩니다.
+  overviewTimeline: [
+    {date:'12.11', place:'Atlanta', detail:'공항 픽업 · Buckhead · Yeppa & Co.', color:'#71ddd1'},
+    {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
+    {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Rock City', color:'#8dbdf7'},
+    {date:'12.14', place:'Atlanta', detail:'Chattanooga → Atlanta', color:'#71ddd1'},
+    {date:'12.15', place:'Miami', detail:'ATL → MIA', color:'#f0b56e'},
+    {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
+    {date:'12.17', place:'Atlanta', detail:'MIA → ATL 귀환', color:'#71ddd1'},
+    {date:'12.18', place:'Atlanta', detail:'Atlanta sightseeing', color:'#71ddd1'},
+    {date:'12.19', place:'Atlanta', detail:'ATL 공항 출국', color:'#71ddd1'}
+  ],
   todos: [
     {label:'Chattanooga 숙소 결정 · 12/13 1박', group:'숙소', done:false},
     {label:'Miami 숙소 결정 · 12/15~17 2박', group:'숙소', done:false},
