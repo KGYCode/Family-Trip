@@ -10,19 +10,20 @@ window.TRIP_DATA = {
   overviewTimeline: [
     {date:'12.11', place:'Atlanta', detail:'공항 픽업 · Buckhead · Yeppa & Co.', color:'#71ddd1'},
     {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
-    {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Rock City', color:'#8dbdf7'},
+    {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Rock City · DoubleTree', color:'#8dbdf7'},
     {date:'12.14', place:'Atlanta', detail:'Chattanooga → Atlanta', color:'#71ddd1'},
-    {date:'12.15', place:'Miami', detail:'ATL → MIA', color:'#f0b56e'},
+    {date:'12.15', place:'Miami', detail:'F9 3442 · MIA 12:42 도착', color:'#f0b56e'},
     {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
-    {date:'12.17', place:'Atlanta', detail:'MIA → ATL 귀환', color:'#71ddd1'},
+    {date:'12.17', place:'Atlanta', detail:'F9 3059 · ATL 16:48 도착', color:'#71ddd1'},
     {date:'12.18', place:'Atlanta', detail:'Atlanta sightseeing', color:'#71ddd1'},
     {date:'12.19', place:'Atlanta', detail:'ATL 공항 출국', color:'#71ddd1'}
   ],
   todos: [
-    {label:'Chattanooga 숙소 결정 · 12/13 1박', group:'숙소', done:false},
+    {label:'Chattanooga DoubleTree 예약 확정 · 12/13 16:00 체크인 / 12/14 11:00 체크아웃', group:'숙소', done:true},
     {label:'Miami 숙소 결정 · 12/15~17 2박', group:'숙소', done:false},
     {label:'Atlanta 호텔 실제 예약 여부 및 분할 숙박 확인', group:'숙소', done:false},
-    {label:'ATL ↔ MIA 왕복 항공편 예약 및 도착/출발 시간 확정', group:'교통', done:false},
+    {label:'Frontier 왕복 항공편 예약 확정 · 12/15 F9 3442 / 12/17 F9 3059', group:'교통', done:true},
+    {label:'Frontier 개인 소지품 외 기내수하물·위탁수하물 허용량 및 추가 구매 확인', group:'교통', done:false},
     {label:'Atlanta 호텔 ↔ ATL 공항 Uber 이동 계획', group:'교통', done:false},
     {label:'Miami 공항 ↔ 호텔 Uber 동선 (숙소 확정 후)', group:'교통', done:false},
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
@@ -59,13 +60,13 @@ window.TRIP_DATA = {
     {
       date:'12.13',weekday:'일요일',area:'CHATTANOOGA',headline:'폭포와 산의 도시',caption:'Ruby Falls · Lookout Mountain · 겨울 야경',accent:'#93cdd3',
       hero:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',
-      highlight:'동굴 계단·보행로 주의 · Rock City 야경은 선택',overnight:'Chattanooga · 호텔 미정 (TODO)',
+      highlight:'DoubleTree 16:00 체크인 · 동굴 계단 주의 · Rock City 야경 선택',overnight:'Chattanooga · DoubleTree by Hilton Chattanooga Downtown (예약 확정)',
       stops:[
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 출발',lat:33.8356,lng:-84.3251,type:'호텔',desc:'내 차로 Chattanooga 이동'},
         {name:'Ruby Falls',short:'Ruby Falls',lat:35.0198,lng:-85.3408,type:'액티비티',desc:'Lookout Mountain 지하 폭포 관람 · 시간지정 예약',image:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',url:'https://www.rubyfalls.com/'},
         {name:'Lookout Mountain',short:'Lookout Mountain',lat:34.9866,lng:-85.3492,type:'전망',desc:'산 전망과 짧은 주변 관광'},
         {name:'Rock City Gardens',short:'Rock City',lat:34.9757,lng:-85.3496,type:'액티비티',desc:'Enchanted Garden of Lights · 저녁 조명 행사(선택)',image:'https://i0.wp.com/blueridgemountainstravelguide.com/wp-content/uploads/2022/12/Rock-City-Christmas-Lights-enchanted-Garden-of-Lights.jpg?resize=1024%2C683&ssl=1',url:'https://www.seerockcity.com/enchanted-garden-of-lights/'},
-        {name:'Chattanooga hotel (TBD)',short:'호텔 TBD',lat:35.0457,lng:-85.3095,type:'할 일',desc:'Chattanooga 호텔 예약 전 · 지도 핀은 Downtown 임시 기준'}
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'DoubleTree 호텔',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'407 Chestnut Street, Chattanooga, TN 37402 · 12/13 16:00 체크인 · 3인 1객실(퀸베드 2개) · 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'}
       ],modes:['car','car','car','car']
     },
     {
@@ -73,7 +74,7 @@ window.TRIP_DATA = {
       hero:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto',
       highlight:'전날 충분히 구경했다면 관광 하나만 선택',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
       stops:[
-        {name:'Chattanooga hotel (TBD)',short:'호텔 출발',lat:35.0457,lng:-85.3095,type:'할 일',desc:'Chattanooga 호텔에서 출발 · 위치는 미정'},
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'DoubleTree 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'12/14 11:00 체크아웃 · 407 Chestnut Street, Chattanooga, TN 37402',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
         {name:'Rock City Gardens (optional)',short:'Rock City 선택',lat:34.9757,lng:-85.3496,type:'전망',desc:'전날 야경으로 충분했다면 생략 가능'},
         {name:'Walnut Street Bridge',short:'Riverfront',lat:35.0582,lng:-85.3073,type:'관광',desc:'Tennessee River 경관과 다리 주변 산책',image:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto'},
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'귀가 후 휴식, 다음 날 항공편 준비'}
@@ -82,11 +83,11 @@ window.TRIP_DATA = {
     {
       date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI',headline:'비행기로 남쪽 바다로',caption:'Uber → ATL → 비행기 → MIA → Uber',accent:'#77d7cf',
       hero:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60',
-      highlight:'Miami 호텔 미정 · 항공권 미정 · 전 일정 Uber',overnight:'Miami · 호텔 미정 (TODO)',
+      highlight:'Frontier F9 3442 · ATL 10:35 → MIA 12:42 · Miami 호텔 미정 · 현지 Uber',overnight:'Miami · 호텔 미정 (TODO)',
       stops:[
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'호텔에서 Uber 호출'},
-        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'국내선 체크인 · 항공편 시간 TODO'},
-        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'도착 후 Uber 이용'},
+        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'12/15 Frontier F9 3442 · 오전 10:35 출발 · 공항 Uber 이동'},
+        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12/15 오후 12:42 도착 · 이후 Uber로 숙소 이동'},
         {name:'Miami hotel (TBD)',short:'Miami 호텔 TBD',lat:25.7850,lng:-80.1340,type:'할 일',desc:'숙소 미정 · 지도상 South Beach 근처 임시 표시'},
         {name:'Ocean Drive & Lummus Park',short:'Ocean Drive',lat:25.7823,lng:-80.1300,type:'CSI 테마',desc:'CSI: Miami 느낌의 Art Deco 건물·야자수·해변',image:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60'}
       ],modes:['uber','flight','uber','walk']
@@ -106,12 +107,12 @@ window.TRIP_DATA = {
     {
       date:'12.17',weekday:'목요일',area:'MIAMI → ATLANTA',headline:'바다와 작별하고 귀환',caption:'시간이 맞으면 South Pointe Park · 비행기로 Atlanta',accent:'#99d3f1',
       hero:'https://assets.simpleviewinc.com/sv-alhi/image/upload/c_fill%2Ch_640%2Cq_75%2Cw_1200/v1/cms_resources/clients/alhitx/vizcaya_video_home_1_copy_1400x747_9920e885-fd9a-4e8d-b0ab-383e1f209bd0.jpg',
-      highlight:'비행기 출발 시간이 우선 · 모든 Miami 육상 이동 Uber',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
+      highlight:'Frontier F9 3059 · MIA 14:31 → ATL 16:48 · Miami 이동 Uber',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
       stops:[
         {name:'Miami hotel (TBD)',short:'Miami 호텔',lat:25.7850,lng:-80.1340,type:'할 일',desc:'체크아웃 · 숙소 위치 확정 후 업데이트'},
         {name:'South Pointe Park (optional)',short:'South Pointe 선택',lat:25.7662,lng:-80.1345,type:'전망',desc:'바다·대형 크루즈선 감상 · 항공편 시간상 생략 가능'},
-        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'Uber로 이동 · 국내선 탑승'},
-        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'Atlanta 도착'},
+        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12/17 Frontier F9 3059 · 오후 2:31 출발 · 공항 Uber 이동'},
+        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'12/17 오후 4:48 도착 · Uber로 호텔 이동'},
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Uber 귀환으로 임시 계획 · 사용자 확인 가능'}
       ],modes:['uber','uber','flight','uber']
     },
