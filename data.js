@@ -11,7 +11,7 @@ window.TRIP_DATA = {
     {date:'12.11', place:'Atlanta', detail:'공항 픽업 · Buckhead · Yeppa & Co.', color:'#71ddd1'},
     {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
     {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Sunset Rock 일몰', color:'#8dbdf7'},
-    {date:'12.14', place:'Nashville → Atlanta', detail:'Nashville Broadway · Atlanta 귀환', color:'#71ddd1'},
+    {date:'12.14', place:'Nashville → Atlanta', detail:'Music City · Murfreesboro Buc-ee’s 점심', color:'#71ddd1'},
     {date:'12.15', place:'Miami', detail:'F9 3442 · MIA 12:42 도착', color:'#f0b56e'},
     {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
     {date:'12.17', place:'Atlanta', detail:'F9 3059 · ATL 16:48 도착', color:'#71ddd1'},
@@ -74,15 +74,15 @@ window.TRIP_DATA = {
       ],modes:['car','walk','car','car','car','car']
     },
     {
-      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → NASHVILLE → ATLANTA',headline:'Music City, Nashville',caption:'DoubleTree 체크아웃 · Lower Broadway 기념품·라이브 음악 · Atlanta 귀환',accent:'#aac0e5',
+      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → NASHVILLE → ATLANTA',headline:'Music City, Nashville',caption:'Nashville Lower Broadway · Murfreesboro Buc-ee’s 점심 · Atlanta 귀환',accent:'#aac0e5',
       hero:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto',
-      highlight:'09:00 EST 출발 → 10:00 전후 CST Nashville 도착 · Nashville은 Chattanooga보다 1시간 느림',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
+      highlight:'Nashville 오전 관광 → 12:30 CST 출발 → Buc-ee’s Murfreesboro 점심 · 중부/동부 시차 주의',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
       stops:[
         {name:'DoubleTree by Hilton Chattanooga Downtown',short:'09:00 EST · 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'체크아웃 후 Nashville로 출발 · 실제 체크아웃 제한 11:00 · 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
         {name:'Lower Broadway, Nashville',short:'10:00 CST · Music City',mapQuery:'Broadway and 4th Avenue North, Nashville, TN 37203',type:'관광',desc:'10:00~12:30 CST · Broadway 거리, 컨트리 음악 라이브 바와 기념품 가게 · 주차 후 도보'},
-        {name:'Downtown Nashville',short:'12:30 CST · 점심',mapQuery:'Lower Broadway, Nashville, TN 37203',type:'식사',desc:'12:30~13:30 CST · Nashville 점심식사 후 Atlanta 방향 출발'},
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'18:30~19:30 EST · Atlanta 귀환',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Nashville 13:30 CST 출발 기준 · 교통에 따라 도착시간 변동 · 다음 날 Miami 항공편 준비'}
-      ],modes:['car','walk','car']
+        {name:'Buc-ee’s Murfreesboro',short:'13:15~14:00 CST · Buc-ee’s 점심',mapQuery:'3355 Elam Road, Murfreesboro, TN 37127',type:'식사',desc:'Nashville에서 12:30 CST 전후 출발 → I-24 Exit 84 Murfreesboro Buc-ee’s 경유 · BBQ 샌드위치·간식 점심, 쇼핑 및 휴식 · 운영 중 · 도로 혼잡 시 시간 조정',url:'https://buc-ees.com/'},
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'저녁 EST · Atlanta 귀환',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Buc-ee’s 점심 후 Atlanta 귀환 · 이동 교통/시차에 따라 저녁 도착 · 다음 날 Miami 항공편 준비'}
+      ],modes:['car','car']
     },
     {
       date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI',headline:'비행기로 남쪽 바다로',caption:'Uber → ATL → 비행기 → MIA → Uber',accent:'#77d7cf',
