@@ -10,8 +10,8 @@ window.TRIP_DATA = {
   overviewTimeline: [
     {date:'12.11', place:'Atlanta', detail:'공항 픽업 · Buckhead · Yeppa & Co.', color:'#71ddd1'},
     {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
-    {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Rock City · DoubleTree', color:'#8dbdf7'},
-    {date:'12.14', place:'Atlanta', detail:'Chattanooga → Atlanta', color:'#71ddd1'},
+    {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Sunset Rock 일몰', color:'#8dbdf7'},
+    {date:'12.14', place:'Nashville → Atlanta', detail:'Nashville Broadway · Atlanta 귀환', color:'#71ddd1'},
     {date:'12.15', place:'Miami', detail:'F9 3442 · MIA 12:42 도착', color:'#f0b56e'},
     {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
     {date:'12.17', place:'Atlanta', detail:'F9 3059 · ATL 16:48 도착', color:'#71ddd1'},
@@ -27,7 +27,9 @@ window.TRIP_DATA = {
     {label:'Atlanta 호텔 ↔ ATL 공항 Uber 이동 계획', group:'교통', done:false},
     {label:'Miami 공항 ↔ 호텔 Uber 동선 (숙소 확정 후)', group:'교통', done:false},
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
-    {label:'Ruby Falls · Rock City 입장권 및 시간 확인', group:'예약', done:false},
+    {label:'Ruby Falls 12/13 오후 14:15 전후 Cave Walk 예약 (Sunset Rock 일몰 역산)', group:'예약', done:false},
+    {label:'Sunset Rock 주차 및 일몰(17:30 전후) 확인', group:'확인', done:false},
+    {label:'12/14 Nashville Lower Broadway 주차 위치 확인', group:'교통', done:false},
     {label:'Biscayne Bay 크루즈 운항시간 및 예약 확인', group:'예약', done:false},
     {label:'12/19 출국편·공항 도착 목표시간 확인', group:'확인', done:false}
   ],
@@ -58,27 +60,29 @@ window.TRIP_DATA = {
       ],modes:['car','car','car','car']
     },
     {
-      date:'12.13',weekday:'일요일',area:'CHATTANOOGA',headline:'폭포와 산의 도시',caption:'Ruby Falls · Lookout Mountain · 겨울 야경',accent:'#93cdd3',
+      date:'12.13',weekday:'일요일',area:'CHATTANOOGA',headline:'강변 산책과 일몰',caption:'Downtown 점심 · Walnut Street Bridge · Ruby Falls · Sunset Rock',accent:'#93cdd3',
       hero:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',
-      highlight:'DoubleTree 16:00 체크인 · 동굴 계단 주의 · Rock City 야경 선택',overnight:'Chattanooga · DoubleTree by Hilton Chattanooga Downtown (예약 확정)',
+      highlight:'Ruby Falls 14:15 전후 예약 목표(미예약) · Sunset Rock 16:45 전망대 도착, 17:30 전후 일몰',overnight:'Chattanooga · DoubleTree by Hilton Chattanooga Downtown (예약 확정)',
       stops:[
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 출발',lat:33.8356,lng:-84.3251,type:'호텔',desc:'내 차로 Chattanooga 이동'},
-        {name:'Ruby Falls',short:'Ruby Falls',lat:35.0198,lng:-85.3408,type:'액티비티',desc:'Lookout Mountain 지하 폭포 관람 · 시간지정 예약',image:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',url:'https://www.rubyfalls.com/'},
-        {name:'Lookout Mountain',short:'Lookout Mountain',lat:34.9866,lng:-85.3492,type:'전망',desc:'산 전망과 짧은 주변 관광'},
-        {name:'Rock City Gardens',short:'Rock City',lat:34.9757,lng:-85.3496,type:'액티비티',desc:'Enchanted Garden of Lights · 저녁 조명 행사(선택)',image:'https://i0.wp.com/blueridgemountainstravelguide.com/wp-content/uploads/2022/12/Rock-City-Christmas-Lights-enchanted-Garden-of-Lights.jpg?resize=1024%2C683&ssl=1',url:'https://www.seerockcity.com/enchanted-garden-of-lights/'},
-        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'DoubleTree 호텔',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'407 Chestnut Street, Chattanooga, TN 37402 · 12/13 16:00 체크인 · 3인 1객실(퀸베드 2개) · 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'}
-      ],modes:['car','car','car','car']
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'09:00 · Atlanta 출발',lat:33.8356,lng:-84.3251,type:'출발',desc:'자가용 출발 · 교통체증 고려'},
+        {name:'Chattanooga Downtown',short:'11:30 · 점심',lat:35.0540,lng:-85.3097,type:'식사',desc:'11:30~12:30 · Downtown 점심식사 · 식당 미정'},
+        {name:'Walnut Street Bridge',short:'12:30 · 강변 산책',lat:35.0582,lng:-85.3073,type:'관광',desc:'12:30~13:30 · 점심 후 강변 산책 · Tennessee River',image:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto'},
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'13:30 · 호텔 짐 보관',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'13:30~14:00 · 호텔에 짐 맡기기 요청(사전 보관 가능 여부 확인) · 체크인 16:00 · 숙박 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
+        {name:'Ruby Falls',short:'14:15 · Ruby Falls',lat:35.0198,lng:-85.3408,type:'액티비티',desc:'14:15 전후 Cave Walk 예약 목표(아직 미예약) · 약 80분 투어 · 온라인 시간지정 입장',image:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',url:'https://www.rubyfalls.com/ruby-falls-tickets/'},
+        {name:'Sunset Rock',short:'16:45 · Sunset Rock',mapQuery:'Sunset Rock, 405 W Brow Rd, Lookout Mountain, TN',type:'전망',desc:'16:20 전후 주차·도보 시작, 16:45 전망대 도착 목표 · 17:30 전후 일몰 감상 · 주차 매우 제한적, 절벽·계단 주의'},
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'18:00 · 호텔 귀환',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'저녁 및 호텔 체크인 · 예약 확정 · 체크아웃 다음 날 11:00',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'}
+      ],modes:['car','walk','car','car','car','car']
     },
     {
-      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → ATLANTA',headline:'강변에서 다시 Atlanta',caption:'Rock City 낮 풍경 또는 Tennessee Riverfront',accent:'#aac0e5',
+      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → NASHVILLE → ATLANTA',headline:'Music City, Nashville',caption:'DoubleTree 체크아웃 · Lower Broadway 기념품·라이브 음악 · Atlanta 귀환',accent:'#aac0e5',
       hero:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto',
-      highlight:'전날 충분히 구경했다면 관광 하나만 선택',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
+      highlight:'09:00 EST 출발 → 10:00 전후 CST Nashville 도착 · Nashville은 Chattanooga보다 1시간 느림',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory',
       stops:[
-        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'DoubleTree 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'12/14 11:00 체크아웃 · 407 Chestnut Street, Chattanooga, TN 37402',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
-        {name:'Rock City Gardens (optional)',short:'Rock City 선택',lat:34.9757,lng:-85.3496,type:'전망',desc:'전날 야경으로 충분했다면 생략 가능'},
-        {name:'Walnut Street Bridge',short:'Riverfront',lat:35.0582,lng:-85.3073,type:'관광',desc:'Tennessee River 경관과 다리 주변 산책',image:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto'},
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'귀가 후 휴식, 다음 날 항공편 준비'}
-      ],modes:['car','car','car']
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'09:00 EST · 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'체크아웃 후 Nashville로 출발 · 실제 체크아웃 제한 11:00 · 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
+        {name:'Lower Broadway, Nashville',short:'10:00 CST · Music City',mapQuery:'Broadway and 4th Avenue North, Nashville, TN 37203',type:'관광',desc:'10:00~12:30 CST · Broadway 거리, 컨트리 음악 라이브 바와 기념품 가게 · 주차 후 도보'},
+        {name:'Downtown Nashville',short:'12:30 CST · 점심',mapQuery:'Lower Broadway, Nashville, TN 37203',type:'식사',desc:'12:30~13:30 CST · Nashville 점심식사 후 Atlanta 방향 출발'},
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'18:30~19:30 EST · Atlanta 귀환',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Nashville 13:30 CST 출발 기준 · 교통에 따라 도착시간 변동 · 다음 날 Miami 항공편 준비'}
+      ],modes:['car','walk','car']
     },
     {
       date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI',headline:'비행기로 남쪽 바다로',caption:'Uber → ATL → 비행기 → MIA → Uber',accent:'#77d7cf',
