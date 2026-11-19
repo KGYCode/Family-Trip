@@ -47,6 +47,12 @@ python build_standalone.py
 - **12/19 국제선 공항 드롭오프:** 사용자 자가용 예정 (확인 필요)
 - **Yeppa & Co. (Buckhead):** 12/11 지정 식당. 306 Buckhead Ave NE, Atlanta, GA 30305. 공식 홈페이지: https://www.yhospitality.com/yeppa-buckhead
 
+## Chattanooga · Nashville 수정 일정 (12/13–14)
+
+- **12/13 일요일 · EST:** 09:00 Atlanta 출발 → 11:30 Downtown 점심 → 12:30 Walnut Street Bridge → 13:30 DoubleTree 호텔에 짐 보관 요청 → 14:15 전후 Ruby Falls Cave Walk(미예약·목표 시간) → 16:45 Sunset Rock 전망대 도착 목표 → 17:30 전후 일몰 → DoubleTree 호텔 복귀. Rock City는 계획에서 제외.
+- **12/14 월요일 · EST/CST 시차 주의:** 09:00 EST DoubleTree 체크아웃·출발 → 10:00 전후 CST Nashville Lower Broadway 도착 → 오전 기념품 가게·컨트리 라이브 음악 → 12:30~13:30 CST 점심 → 13:30 CST Nashville 출발 → 18:30~19:30 EST Atlanta 예상 도착.
+- Ruby Falls 입장권은 **아직 구매하지 않았으며**, 정해진 투어 시간과 교통상황에 따라 조정. Sunset Rock 주차 공간·해 지기 전 이동·보행 안전 주의.
+
 ## 지도 정확도
 
 방문지 핀 좌표는 **계획 단계에서 참고용으로 입력한 근사 위치**입니다. 미확정 호텔은 도시의 대표 지역에 임시로 표시했습니다. 지도는 방문지별 단일 위치만 표시하며 자체 경로선·교통수단 오버레이는 없습니다. 방문지 선택 버튼으로 위치를 전환합니다. 실제 운전/우버 동선은 카드의 Google Maps 길찾기 버튼으로 확인하세요.
