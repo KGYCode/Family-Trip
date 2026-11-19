@@ -50,7 +50,7 @@ python build_standalone.py
 ## Chattanooga · Nashville 수정 일정 (12/13–14)
 
 - **12/13 일요일 · EST:** 09:00 Atlanta 출발 → 11:30 Downtown 점심 → 12:30 Walnut Street Bridge → 13:30 DoubleTree 호텔에 짐 보관 요청 → 14:15 전후 Ruby Falls Cave Walk(미예약·목표 시간) → 16:45 Sunset Rock 전망대 도착 목표 → 17:30 전후 일몰 → DoubleTree 호텔 복귀. Rock City는 계획에서 제외.
-- **12/14 월요일 · EST/CST 시차 주의:** 09:00 EST DoubleTree 체크아웃·출발 → 10:00 전후 CST Nashville Lower Broadway 도착 → 오전 기념품 가게·컨트리 라이브 음악 → 12:30~13:30 CST 점심 → 13:30 CST Nashville 출발 → 18:30~19:30 EST Atlanta 예상 도착.
+- **12/14 월요일 · EST/CST 시차 주의:** 09:00 EST DoubleTree 체크아웃·출발 → 10:00 전후 CST Nashville Lower Broadway 도착 → 오전 기념품 가게·컨트리 라이브 음악 → 12:30 CST Nashville 출발 → 13:15~14:00 CST **Buc-ee’s Murfreesboro (3355 Elam Road, I-24 Exit 84)에서 점심 및 휴식** → Atlanta로 귀환(교통·시차 고려, 저녁 예상 도착).
 - Ruby Falls 입장권은 **아직 구매하지 않았으며**, 정해진 투어 시간과 교통상황에 따라 조정. Sunset Rock 주차 공간·해 지기 전 이동·보행 안전 주의.
 
 ## 지도 정확도
