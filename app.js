@@ -56,8 +56,8 @@
       </section>
       <div class="overview-grid">
         <div class="summary-card"><span>ATLANTA BASE</span><h3>선택한 숙소</h3><p>${escape(TRIP.baseHotel)}<br>${escape(TRIP.baseAddress)}<br>12/11·12·14·17·18 숙박</p></div>
-        <div class="summary-card"><span>CHATTANOOGA</span><h3>12/13–14 · 1박 2일</h3><p>Ruby Falls · Lookout Mountain · Rock City<br>내 차로 왕복<br><b>호텔 미정</b></p></div>
-        <div class="summary-card"><span>MIAMI</span><h3>12/15–17 · 2박 3일</h3><p>Atlanta에서 Uber → 국내선 비행 → Miami에서는 Uber · 보트 크루즈<br><b>호텔·항공편 미정</b></p></div>
+        <div class="summary-card"><span>CHATTANOOGA</span><h3>12/13–14 · 1박 2일</h3><p>Ruby Falls · Lookout Mountain · Rock City<br>내 차로 왕복<br><b>DoubleTree Chattanooga Downtown · 예약 확정</b></p></div>
+        <div class="summary-card"><span>MIAMI</span><h3>12/15–17 · 2박 3일</h3><p>Atlanta에서 Uber → 국내선 비행 → Miami에서는 Uber · 보트 크루즈<br><b>Frontier 왕복 확정 · Miami 호텔 미정</b><br>12/15 F9 3442 · 10:35–12:42<br>12/17 F9 3059 · 14:31–16:48</p></div>
       </div>
       <div class="big-label" style="margin-bottom:14px">날짜를 클릭하면 동선을 확인할 수 있습니다</div>
       <div class="list-days">${TRIP.days.map((d,i)=>`<button class="day-mini" data-jump="${i}"><b>${escape(d.date)}</b><span><strong>${escape(d.headline)}</strong><small>${escape(d.area)} · ${escape(d.weekday)}</small></span></button>`).join('')}</div>
@@ -93,7 +93,7 @@
   // External embedding is controlled by Google; a direct Maps link is always available.
   function renderMap(d){
     const valid=d.stops.map((stop,i)=>({...stop,index:i})).filter(stop=>
-      Number.isFinite(stop.lat)&&Number.isFinite(stop.lng)
+      (Number.isFinite(stop.lat)&&Number.isFinite(stop.lng)) || Boolean(stop.mapQuery)
     );
     const preferred=valid.find(stop=>!['호텔','공항','할 일'].includes(stop.type)) || valid[0];
     if(!preferred){
@@ -118,11 +118,12 @@
   }
   function focusPlace(stop){
     // Numeric coordinates avoid ambiguity when hotel names or place names change.
-    const coords=`${stop.lat},${stop.lng}`;
-    const embed=`https://maps.google.com/maps?q=${encodeURIComponent(coords)}&z=14&output=embed`;
+    const coords=Number.isFinite(stop.lat)&&Number.isFinite(stop.lng)?`${stop.lat},${stop.lng}`:null;
+    const placeQuery=stop.mapQuery||coords||stop.name;
+    const embed=`https://maps.google.com/maps?q=${encodeURIComponent(placeQuery)}&z=14&output=embed`;
     $('googleMapFrame').src=embed;
     $('googleMapFrame').title=`Google Maps · ${stop.name}`;
-    $('googleMapLink').href=mapsSearch(`${stop.name} ${coords}`);
+    $('googleMapLink').href=mapsSearch(stop.mapQuery||`${stop.name}${coords?' '+coords:''}`);
     $('map').querySelectorAll('[data-map-index]').forEach(button=>
       button.classList.toggle('selected',Number(button.dataset.mapIndex)===TRIP.days[idx].stops.indexOf(stop))
     );
