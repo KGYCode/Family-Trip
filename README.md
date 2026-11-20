@@ -37,7 +37,7 @@ python build_standalone.py
 
 ## 현재 확정·미확정
 
-- **선택한 Atlanta 호텔:** Courtyard by Marriott Atlanta Executive Park/Emory, 1236 Executive Park Drive, Atlanta, GA 30329. *예약 완료 여부 미확인*
+- **Atlanta 호텔 예약 확정:** Courtyard by Marriott Atlanta Executive Park/Emory, 1236 Executive Park Drive, Atlanta, GA 30329. 세 건의 별도 예약: **12/11 체크인–12/13 체크아웃 (2박)**, **12/14–12/15 (1박)**, **12/17–12/19 (2박)**, 합계 **5박**. 예약번호·결제정보는 공개 저장소에 기록하지 않음.
 - **Chattanooga 12/13–14:** DoubleTree by Hilton Chattanooga Downtown, 407 Chestnut Street, Chattanooga, TN 37402. 1박, 3인, 퀸베드 2개. 체크인 12/13 16:00 / 체크아웃 12/14 11:00. **예약 확정** (예약번호·결제정보 비공개)
 - **Miami 12/15–17:** 호텔 미정
 - **ATL↔MIA:** Frontier F9 3442 (12/15 10:35 ATL 출발, 12:42 MIA 도착), F9 3059 (12/17 14:31 MIA 출발, 16:48 ATL 도착). **예약 확정** (예약번호·승객명·결제정보 비공개)
