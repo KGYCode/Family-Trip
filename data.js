@@ -11,7 +11,7 @@ window.TRIP_DATA = {
     {date:'12.11', place:'Atlanta', detail:'공항 픽업 · Buckhead · Yeppa & Co.', color:'#71ddd1'},
     {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
     {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Sunset Rock 일몰', color:'#8dbdf7'},
-    {date:'12.14', place:'Nashville → Atlanta', detail:'Music City · Murfreesboro Buc-ee’s 점심', color:'#71ddd1'},
+    {date:'12.14', place:'Chattanooga → Atlanta', detail:'Walnut Street Bridge · Riverfront', color:'#71ddd1'},
     {date:'12.15', place:'Miami', detail:'F9 3442 · MIA 12:42 도착', color:'#f0b56e'},
     {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
     {date:'12.17', place:'Atlanta', detail:'F9 3059 · ATL 16:48 도착', color:'#71ddd1'},
@@ -30,7 +30,6 @@ window.TRIP_DATA = {
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
     {label:'Ruby Falls 12/13 오후 14:15 전후 Cave Walk 예약 (Sunset Rock 일몰 역산)', group:'예약', done:false},
     {label:'Sunset Rock 주차 및 일몰(17:30 전후) 확인', group:'확인', done:false},
-    {label:'12/14 Nashville Lower Broadway 주차 위치 확인', group:'교통', done:false},
     {label:'Biscayne Bay 크루즈 운항시간 및 예약 확인', group:'예약', done:false},
     {label:'12/19 출국편·공항 도착 목표시간 확인', group:'확인', done:false}
   ],
@@ -61,29 +60,30 @@ window.TRIP_DATA = {
       ],modes:['car','car','car','car']
     },
     {
-      date:'12.13',weekday:'일요일',area:'CHATTANOOGA',headline:'강변 산책과 일몰',caption:'Downtown 점심 · Walnut Street Bridge · Ruby Falls · Sunset Rock',accent:'#93cdd3',
+      date:'12.13',weekday:'일요일',area:'CHATTANOOGA',headline:'동굴 폭포와 산 위의 일몰',caption:'Downtown 점심 · Ruby Falls · Sunset Rock 일몰',accent:'#93cdd3',
       hero:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',
-      highlight:'Ruby Falls 14:15 전후 예약 목표(미예약) · Sunset Rock 16:45 전망대 도착, 17:30 전후 일몰',overnight:'Chattanooga · DoubleTree by Hilton Chattanooga Downtown (예약 확정)',
+      highlight:'Ruby Falls 14:15 전후 예약 목표(미예약) · Sunset Rock 16:45 전망대 도착, 17:30 전후 일몰',
+      overnight:'Chattanooga · DoubleTree by Hilton Chattanooga Downtown (예약 확정)',
       stops:[
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'09:00 · Atlanta 출발',lat:33.8356,lng:-84.3251,type:'출발',desc:'자가용 출발 · 교통체증 고려'},
-        {name:'Chattanooga Downtown',short:'11:30 · 점심',lat:35.0540,lng:-85.3097,type:'식사',desc:'11:30~12:30 · Downtown 점심식사 · 식당 미정'},
-        {name:'Walnut Street Bridge',short:'12:30 · 강변 산책',lat:35.0582,lng:-85.3073,type:'관광',desc:'12:30~13:30 · 점심 후 강변 산책 · Tennessee River',image:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto'},
-        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'13:30 · 호텔 짐 보관',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'13:30~14:00 · 호텔에 짐 맡기기 요청(사전 보관 가능 여부 확인) · 체크인 16:00 · 숙박 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
-        {name:'Ruby Falls',short:'14:15 · Ruby Falls',lat:35.0198,lng:-85.3408,type:'액티비티',desc:'14:15 전후 Cave Walk 예약 목표(아직 미예약) · 약 80분 투어 · 온라인 시간지정 입장',image:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',url:'https://www.rubyfalls.com/ruby-falls-tickets/'},
-        {name:'Sunset Rock',short:'16:45 · Sunset Rock',mapQuery:'Sunset Rock, 405 W Brow Rd, Lookout Mountain, TN',type:'전망',desc:'16:20 전후 주차·도보 시작, 16:45 전망대 도착 목표 · 17:30 전후 일몰 감상 · 주차 매우 제한적, 절벽·계단 주의'},
-        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'18:00 · 호텔 귀환',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'저녁 및 호텔 체크인 · 예약 확정 · 체크아웃 다음 날 11:00',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'}
-      ],modes:['car','walk','car','car','car','car']
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'09:00 · Atlanta 출발',lat:33.8356,lng:-84.3251,type:'출발',desc:'12/11~13 호텔 체크아웃 후 자가용 출발 · 교통체증 고려'},
+        {name:'Chattanooga Downtown',short:'11:30~12:45 · 점심',lat:35.0540,lng:-85.3097,type:'식사',desc:'Chattanooga Downtown 점심 식사 및 휴식 · 식당 미정'},
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'13:00 · 호텔 짐 보관',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'사전 짐 보관 요청(호텔 확인 필요) · 공식 체크인 16:00 · 1박 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
+        {name:'Ruby Falls',short:'14:15 · Ruby Falls',lat:35.0198,lng:-85.3408,type:'액티비티',desc:'14:15 전후 Cave Walk 예약 목표(아직 미예약) · 약 80분 투어 · Sunset Rock 일몰 일정 역산',image:'https://www.rubyfalls.com/wp-content/uploads/2024/02/Waterfall_AGP_Teal-Pink_1080x1080.jpg',url:'https://www.rubyfalls.com/ruby-falls-tickets/'},
+        {name:'Sunset Rock',short:'16:45 · Sunset Rock',mapQuery:'Sunset Rock, 405 W Brow Rd, Lookout Mountain, TN',type:'전망',desc:'16:20 전후 주차·도보 시작 · 16:45 전망대 도착 목표 · 17:30 전후 일몰 · 주차 제한, 계단·절벽 주의'},
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'18:00 이후 · 호텔',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'일몰 후 호텔 체크인과 저녁 · 다음 날 11:00 체크아웃',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'}
+      ],modes:['car','car','car','car','car']
     },
     {
-      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → NASHVILLE → ATLANTA',headline:'Music City, Nashville',caption:'Nashville Lower Broadway · Murfreesboro Buc-ee’s 점심 · Atlanta 귀환',accent:'#aac0e5',
+      date:'12.14',weekday:'월요일',area:'CHATTANOOGA → ATLANTA',headline:'강변에서 여유롭게',caption:'Walnut Street Bridge · Tennessee Riverfront · Atlanta 귀환',accent:'#aac0e5',
       hero:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto',
-      highlight:'Nashville 오전 관광 → 12:30 CST 출발 → Buc-ee’s Murfreesboro 점심 · 중부/동부 시차 주의',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory (예약 확정)',
+      highlight:'Chattanooga에서 여유로운 오전 · Courtyard 12/14 1박 예약 확정',
+      overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory (예약 확정)',
       stops:[
-        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'09:00 EST · 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'체크아웃 후 Nashville로 출발 · 실제 체크아웃 제한 11:00 · 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
-        {name:'Lower Broadway, Nashville',short:'10:00 CST · Music City',mapQuery:'Broadway and 4th Avenue North, Nashville, TN 37203',type:'관광',desc:'10:00~12:30 CST · Broadway 거리, 컨트리 음악 라이브 바와 기념품 가게 · 주차 후 도보'},
-        {name:'Buc-ee’s Murfreesboro',short:'13:15~14:00 CST · Buc-ee’s 점심',mapQuery:'3355 Elam Road, Murfreesboro, TN 37127',type:'식사',desc:'Nashville에서 12:30 CST 전후 출발 → I-24 Exit 84 Murfreesboro Buc-ee’s 경유 · BBQ 샌드위치·간식 점심, 쇼핑 및 휴식 · 운영 중 · 도로 혼잡 시 시간 조정',url:'https://buc-ees.com/'},
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'저녁 EST · Atlanta 귀환',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Buc-ee’s 점심 후 Atlanta 귀환 · Courtyard 12/14~15 (1박) 예약 확정 · 다음 날 Miami 항공편 준비'}
-      ],modes:['car','car']
+        {name:'DoubleTree by Hilton Chattanooga Downtown',short:'11:00 이전 · 호텔 체크아웃',mapQuery:'407 Chestnut Street, Chattanooga, TN 37402',type:'호텔',desc:'11:00까지 체크아웃 · 12/13~14 1박 예약 확정',url:'https://www.hilton.com/en/hotels/chachdt-doubletree-chattanooga-downtown/'},
+        {name:'Walnut Street Bridge',short:'11:00~12:00 · 강변 산책',lat:35.0582,lng:-85.3073,type:'관광',desc:'Walnut Street Bridge 및 Tennessee River 주변 산책',image:'https://koa.com/blog/images/GettyImages-1032356740.jpg?preset=blogPhoto'},
+        {name:'Chattanooga Riverfront',short:'12:00~13:30 · 점심',mapQuery:'Chattanooga Riverfront, Chattanooga, TN',type:'식사',desc:'강변 근처 점심식사와 휴식 · 식당 미정'},
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'오후 · Atlanta 복귀',lat:33.8356,lng:-84.3251,type:'호텔',desc:'점심 후 Chattanooga에서 출발 · Courtyard 12/14~15 (1박) 예약 확정 · 다음 날 Miami 항공편 준비'}
+      ],modes:['car','walk','car']
     },
     {
       date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI',headline:'비행기로 남쪽 바다로',caption:'Uber → ATL → 비행기 → MIA → Uber',accent:'#77d7cf',
