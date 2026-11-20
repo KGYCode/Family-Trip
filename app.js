@@ -56,7 +56,7 @@
       </section>
       <div class="overview-grid">
         <div class="summary-card"><span>ATLANTA BASE</span><h3>예약 확정 · 총 5박</h3><p>${escape(TRIP.baseHotel)}<br>${escape(TRIP.baseAddress)}<br>12/11–13 (2박) · 12/14–15 (1박) · 12/17–19 (2박)</p></div>
-        <div class="summary-card"><span>CHATTANOOGA</span><h3>12/13–14 · 1박 2일</h3><p>Ruby Falls · Lookout Mountain · Rock City<br>내 차로 왕복<br><b>DoubleTree Chattanooga Downtown · 예약 확정</b></p></div>
+        <div class="summary-card"><span>CHATTANOOGA</span><h3>12/13–14 · 1박 2일</h3><p>Ruby Falls · Sunset Rock 일몰 · Walnut Street Bridge<br>12/13–14 Chattanooga 1박 2일 · 내 차로 왕복<br><b>DoubleTree Chattanooga Downtown · 예약 확정</b></p></div>
         <div class="summary-card"><span>MIAMI</span><h3>12/15–17 · 2박 3일</h3><p>Atlanta에서 Uber → 국내선 비행 → Miami에서는 Uber · 보트 크루즈<br><b>Frontier 왕복 확정 · Miami 호텔 미정</b><br>12/15 F9 3442 · 10:35–12:42<br>12/17 F9 3059 · 14:31–16:48</p></div>
       </div>
       <div class="big-label" style="margin-bottom:14px">날짜를 클릭하면 동선을 확인할 수 있습니다</div>
