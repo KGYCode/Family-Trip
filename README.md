@@ -39,11 +39,11 @@ python build_standalone.py
 
 - **Atlanta 호텔 예약 확정:** Courtyard by Marriott Atlanta Executive Park/Emory, 1236 Executive Park Drive, Atlanta, GA 30329. 세 건의 별도 예약: **12/11 체크인–12/13 체크아웃 (2박)**, **12/14–12/15 (1박)**, **12/17–12/19 (2박)**, 합계 **5박**. 예약번호·결제정보는 공개 저장소에 기록하지 않음.
 - **Chattanooga 12/13–14:** DoubleTree by Hilton Chattanooga Downtown, 407 Chestnut Street, Chattanooga, TN 37402. 1박, 3인, 퀸베드 2개. 체크인 12/13 16:00 / 체크아웃 12/14 11:00. **예약 확정** (예약번호·결제정보 비공개)
-- **Miami 12/15–17:** 호텔 미정
+- **Miami 12/15–17:** Miami Beach 23번가 Pine Tree Drive 부근 Airbnb 2박 예약(사용자 확인). 정확한 숙소 호수·출입 정보는 공개 저장소에 기록하지 않음.
 - **ATL↔MIA:** Frontier F9 3442 (12/15 10:35 ATL 출발, 12:42 MIA 도착), F9 3059 (12/17 14:31 MIA 출발, 16:48 ATL 도착). **예약 확정** (예약번호·승객명·결제정보 비공개)
 - **12/11 공항 픽업:** 사용자 자가용
-- **12/15 Atlanta 호텔→공항:** Uber; Miami에서는 Uber
-- **12/17 Atlanta 공항→호텔:** Uber 임시 계획 (사용자 확인 가능)
+- **12/15 Atlanta 호텔→공항:** Uber. **Miami MIA→숙소:** 무료 MIA Mover → 150 Miami Beach Airport Express ($2.25/인) → Collins Ave & 22nd St → 숙소 인근 도보(버스 운영 및 정류장 확인).
+- **12/17 Miami 숙소→MIA:** 150번 Airport Express 버스 + 무료 MIA Mover (지연 시 Uber). **ATL 공항→호텔:** Uber 임시 계획.
 - **12/19 국제선 공항 드롭오프:** 사용자 자가용 예정 (확인 필요)
 - **Yeppa & Co. (Buckhead):** 12/11 지정 식당. 306 Buckhead Ave NE, Atlanta, GA 30305. 공식 홈페이지: https://www.yhospitality.com/yeppa-buckhead
 
@@ -53,6 +53,13 @@ python build_standalone.py
 - **12/14 월요일 · EST:** DoubleTree 11:00 이전 체크아웃 → Walnut Street Bridge 및 Tennessee Riverfront 산책 → 강변 근처 점심 → 오후 Atlanta 귀환.
 - Nashville 및 Murfreesboro Buc-ee’s 경유는 취소. Rock City도 기존 결정대로 제외.
 - Ruby Falls는 아직 예약 전이며 Sunset Rock 일몰을 고려해 시간 선택. 호텔 예약 3건은 성인 2명으로 정확하며, 나머지 가족여행 참여자 1명은 별도 숙박함.
+
+## Miami Beach 2박 3일 계획 (12/15–17)
+
+- **12/15(화):** Frontier F9 3442 · ATL 10:35 → MIA 12:42. 공항 무료 MIA Mover 및 150번 Airport Express 버스로 Miami Beach 이동, 숙소 짐 보관/체크인 확인 → 23번가 Beachwalk 산책 → Lincoln Road → Ocean Drive/Lummus Park 야경. 숙소는 Pine Tree Drive 23번가 부근 Airbnb, 예약 완료.
+- **12/16(수):** 06:40 Beachwalk 도착 → **07:00 전후 일출** → 아침 식사 → 09:45~12:00 Vizcaya Museum & Gardens → Downtown 점심 → 13:30 Bayside Marketplace → **15:00~16:30 Island Queen Millionaire's Row 관광 크루즈 목표(예약 전)** → Bayfront Park 선택 → Uber로 숙소 귀환. 크루즈 탑승권은 14:15까지 Bayside 매표소에서 교환해야 하며, 티켓은 환불 불가. 공식 예약: https://islandqueencruises.com/cruises/millionaires-row-sightseeing-cruise/
+- **12/17(목):** 해변 아침 산책 → 10:30~11:00 숙소 출발 목표 → 150번 버스 및 MIA Mover로 공항 이동(지연 시 Uber) → Frontier F9 3059 · MIA 14:31 → ATL 16:48.
+- 공항 버스는 1인 편도 $2.25(2026년 기준). 숙소 정확한 호수·예약 코드·결제정보는 공개 사이트에 저장하지 않음. Airbnb 조기 체크인 및 체크아웃 시간은 호스트 확인 필요.
 
 ## 지도 정확도
 
