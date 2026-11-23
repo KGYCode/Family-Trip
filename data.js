@@ -13,7 +13,7 @@ window.TRIP_DATA = {
     {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Sunset Rock 일몰', color:'#8dbdf7'},
     {date:'12.14', place:'Chattanooga → Atlanta', detail:'Walnut Street Bridge · Riverfront', color:'#71ddd1'},
     {date:'12.15', place:'Miami Beach', detail:'F9 3442 · Airport Express 150 · Ocean Drive', color:'#f0b56e'},
-    {date:'12.16', place:'Miami', detail:'07:00 일출 · Vizcaya · 15:00 Bay Cruise', color:'#f0b56e'},
+    {date:'12.16', place:'Miami', detail:'07:00 일출 · Vizcaya · 17:00 Bayride 크루즈', color:'#f0b56e'},
     {date:'12.17', place:'Atlanta', detail:'Beachwalk · Airport Express 150 · F9 3059', color:'#71ddd1'},
     {date:'12.18', place:'Atlanta', detail:'Atlanta sightseeing', color:'#71ddd1'},
     {date:'12.19', place:'Atlanta', detail:'ATL 공항 출국', color:'#71ddd1'}
@@ -30,7 +30,8 @@ window.TRIP_DATA = {
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
     {label:'Ruby Falls 12/13 오후 14:15 전후 Cave Walk 예약 (Sunset Rock 일몰 역산)', group:'예약', done:false},
     {label:'Sunset Rock 주차 및 일몰(17:30 전후) 확인', group:'확인', done:false},
-    {label:'12/16 Island Queen Millionaire’s Row 15:00 크루즈 예약 (미예약 · 14:15까지 승선권 교환)', group:'예약', done:false},
+    {label:'12/16 17:00 Bayride Tours 크루즈 3인 예약 확정 · 16:30 선착장 체크인 · 12/13 결제 처리 및 모바일 티켓 확인', group:'예약', done:true},
+    {label:'Bayride 크루즈 $60 자동 결제(12/13 예정) 후 모바일 티켓 발급 확인', group:'확인', done:false},
     {label:'Miami Beach Airbnb 조기 체크인·짐 보관 및 12/17 체크아웃 시간 확인', group:'확인', done:false},
     {label:'12/19 출국편·공항 도착 목표시간 확인', group:'확인', done:false}
   ],
@@ -107,7 +108,7 @@ window.TRIP_DATA = {
     {
       date:'12.16',weekday:'수요일',area:'MIAMI BEACH → MIAMI',headline:'일출과 Biscayne Bay',caption:'해변 일출 · Vizcaya · Bayside · Millionaire’s Row 크루즈',accent:'#7cddde',
       hero:'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/70c1dd2a481926607008ae24d87f72d3d0e64dec8c1ea885321ef108504bb969.png',
-      highlight:'06:40 해변 도착 → 07:00 전후 일출 · Island Queen 15:00 크루즈 예약 목표(미예약) · 14:15 매표소 도착',
+      highlight:'06:40 해변 도착 → 07:00 전후 일출 · Bayride Tours 크루즈 17:00 예약 확정(3인) · 16:30 선착장 체크인',
       overnight:'Miami Beach · Pine Tree Drive 23번가 부근 Airbnb (12/15–17 2박 예약)',
       stops:[
         {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'06:25 · 숙소 출발',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'아침 일출을 위해 도보 출발 · 날씨 확인'},
@@ -115,11 +116,12 @@ window.TRIP_DATA = {
         {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'07:30~09:00 · 아침',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'아침 식사 및 휴식 후 본토 관광으로 이동'},
         {name:'Vizcaya Museum & Gardens',short:'09:45~12:00 · Vizcaya',lat:25.7445,lng:-80.2105,type:'정원',desc:'수요일 09:30~16:30 운영 · 정원과 해안 저택 산책 · 입장권 확인',image:'https://assets.simpleviewinc.com/sv-alhi/image/upload/c_fill%2Ch_640%2Cq_75%2Cw_1200/v1/cms_resources/clients/alhitx/vizcaya_video_home_1_copy_1400x747_9920e885-fd9a-4e8d-b0ab-383e1f209bd0.jpg',url:'https://vizcaya.org/visit/'},
         {name:'Downtown Miami',short:'12:00~13:30 · 점심',mapQuery:'Downtown Miami, FL',type:'식사',desc:'Vizcaya에서 Downtown으로 이동 후 점심 · 식당 미정'},
-        {name:'Bayside Marketplace',short:'13:30~14:15 · Bayside',lat:25.7785,lng:-80.1869,type:'관광',desc:'Bayside Marketplace 구경 · 15:00 크루즈 이용 시 14:15까지 Island Queen 매표소에서 승선권 교환'},
-        {name:'Island Queen Millionaire’s Row Cruise',short:'15:00~16:30 · 관광 크루즈',mapQuery:'Island Queen Cruises, 401 Biscayne Blvd, Miami, FL',type:'보트',desc:'90분 Biscayne Bay 관광 · 15:00 출항편 예약 목표(미예약) · 성인 $35/인, 3명 $105 · 바우처는 14:15까지 매표소에서 승선권으로 교환',url:'https://islandqueencruises.com/cruises/millionaires-row-sightseeing-cruise/'},
-        {name:'Bayfront Park',short:'16:30~17:30 · 강변 산책',mapQuery:'Bayfront Park, Miami, FL',type:'산책',desc:'크루즈 후 Bayfront 주변 산책 · 체력에 따라 생략 가능'},
+        {name:'Bayfront Park',short:'14:00~15:00 · 산책',mapQuery:'Bayfront Park, Miami, FL',type:'산책',desc:'점심 후 공원과 Biscayne Bay 경관 감상 · 선택 일정'},
+        {name:'Bayside Marketplace',short:'15:00~16:15 · Bayside',lat:25.7785,lng:-80.1869,type:'관광',desc:'Bayside Marketplace 산책 및 휴식 · 16:30까지 Bayride Tours 체크인 매표소 도착'},
+        {name:'Bayride Tours · Pier 5 ticket kiosk',short:'16:30 · 선착장 체크인',mapQuery:'Bayride Tours Pier 5 behind Victorias Secret, Bayside Marketplace, 401 Biscayne Boulevard, Miami, FL 33132',type:'체크인',desc:'예약 확정 · 401 Biscayne Blvd, Bayside Marketplace 북쪽 마리나 · Mojito Bar에서 바다 방향 왼쪽 → 두 번째 계단에서 오른쪽 → Victoria’s Secret 뒤편, Pier 5 주차장 인근 매표소에서 체크인'},
+        {name:'Bayride Tours · Biscayne Bay Cruise',short:'17:00~18:30 · 일몰 크루즈',mapQuery:'Bayride Tours Pier 5 Bayside Marketplace, 401 Biscayne Boulevard, Miami, FL 33132',type:'보트',desc:'GetYourGuide 예약 확정 · 12/16 17:00 출항 · 90분 · 성인 3명 · 총 $60(12/13 자동 결제 예정) · 16:30까지 매표소 체크인 · 동일 장소로 복귀',url:'https://www.getyourguide.com/miami-l176/biscayne-bay-millionaires-homes-sightseeing-cruise/'},
         {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'저녁 · 숙소 귀환',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'Uber로 Miami Beach 귀환'}
-      ],modes:['walk','walk','uber','uber','walk','boat','walk','uber']
+      ],modes:['walk','walk','uber','uber','walk','walk','walk','boat','uber']
     },
     {
       date:'12.17',weekday:'목요일',area:'MIAMI BEACH → ATLANTA',headline:'해변과 작별하고 귀환',caption:'아침 Beachwalk · Airport Express 150 · Frontier 항공편',accent:'#99d3f1',
