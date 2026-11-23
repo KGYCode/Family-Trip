@@ -57,7 +57,7 @@ python build_standalone.py
 ## Miami Beach 2박 3일 계획 (12/15–17)
 
 - **12/15(화):** Frontier F9 3442 · ATL 10:35 → MIA 12:42. 공항 무료 MIA Mover 및 150번 Airport Express 버스로 Miami Beach 이동, 숙소 짐 보관/체크인 확인 → 23번가 Beachwalk 산책 → Lincoln Road → Ocean Drive/Lummus Park 야경. 숙소는 Pine Tree Drive 23번가 부근 Airbnb, 예약 완료.
-- **12/16(수):** 06:40 Beachwalk 도착 → **07:00 전후 일출** → 아침 식사 → 09:45~12:00 Vizcaya Museum & Gardens → Downtown 점심 → 13:30 Bayside Marketplace → **15:00~16:30 Island Queen Millionaire's Row 관광 크루즈 목표(예약 전)** → Bayfront Park 선택 → Uber로 숙소 귀환. 크루즈 탑승권은 14:15까지 Bayside 매표소에서 교환해야 하며, 티켓은 환불 불가. 공식 예약: https://islandqueencruises.com/cruises/millionaires-row-sightseeing-cruise/
+- **12/16(수):** 06:40 Beachwalk 도착 → **07:00 전후 일출** → 아침 식사 → 09:45~12:00 Vizcaya Museum & Gardens → Downtown 점심 → 14:00~15:00 Bayfront Park(선택) → 15:00~16:15 Bayside Marketplace → **16:30 Bayride Tours 선착장 체크인 → 17:00~18:30 Biscayne Bay Millionaires' Homes Sightseeing Cruise (예약 확정, 성인 3명)** → Uber로 숙소 귀환. **출항 장소:** 401 Biscayne Blvd, Miami FL 33132, Bayside Marketplace 북쪽 마리나의 Victoria's Secret 뒤편/Pier 5 주차장 인근 Bayride 매표소. 진입 후 Mojito Bar에서 바다 쪽 왼쪽, 두 번째 계단에서 오른쪽. 운영사 Bayride Tours / 예약 플랫폼 GetYourGuide. 총 $60, 2026-12-13 자동 결제 예정이며 결제 완료 후 모바일 티켓 확인 필요. 예약번호·PIN은 공개하지 않음.
 - **12/17(목):** 해변 아침 산책 → 10:30~11:00 숙소 출발 목표 → 150번 버스 및 MIA Mover로 공항 이동(지연 시 Uber) → Frontier F9 3059 · MIA 14:31 → ATL 16:48.
 - 공항 버스는 1인 편도 $2.25(2026년 기준). 숙소 정확한 호수·예약 코드·결제정보는 공개 사이트에 저장하지 않음. Airbnb 조기 체크인 및 체크아웃 시간은 호스트 확인 필요.
 
