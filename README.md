@@ -24,7 +24,7 @@
 
 `data.js`의 `TRIP_DATA.days` 안에서 날짜별 `stops` 배열을 수정합니다. 각 장소는 `name`, `short`, `lat`, `lng`, `type`, `desc`, `url`(선택), `image`(선택)을 포함합니다.
 
-`modes`의 항목 수는 **`stops.length - 1`**이어야 하며, 각 구간의 수단은 `car`(내 차), `uber`, `flight`, `walk`, `boat`를 사용합니다.
+`modes`의 항목 수는 **`stops.length - 1`**이어야 하며, 각 구간의 수단은 `car`(내 차), `uber`, `flight`, `walk`, `boat`, `bus`(버스), `train`(공항 연결열차)를 사용합니다.
 
 예: 방문지 한 개를 추가했다면 연결되는 `modes`도 한 개를 추가하세요.
 
