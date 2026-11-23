@@ -10,12 +10,14 @@
     uber:{label:'Uber',icon:'🚕',color:'#a8d5ff'},
     flight:{label:'비행기',icon:'✈',color:'#e8a7f4'},
     walk:{label:'도보',icon:'↗',color:'#8ee0ab'},
-    boat:{label:'보트',icon:'⛴',color:'#73d8da'}
+    boat:{label:'보트',icon:'⛴',color:'#73d8da'},
+    bus:{label:'버스 · Route 150',icon:'▣',color:'#a9d3fa'},
+    train:{label:'MIA Mover',icon:'▤',color:'#cbb7f2'}
   };
   const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const mapsSearch=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
   const gmapsDirections=(a,b,mode)=>{
-    const path=(mode==='walk')?'walking':'driving';
+    const path=(mode==='walk')?'walking':((mode==='bus'||mode==='train')?'transit':'driving');
     return `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(a.name)}&destination=${encodeURIComponent(b.name)}&travelmode=${path}`;
   };
   let idx=-1;
