@@ -102,7 +102,7 @@ window.TRIP_DATA = {
         {name:'Lincoln Road',short:'16:30 · Lincoln Road',mapQuery:'Lincoln Road Mall, Miami Beach, FL',type:'관광',desc:'보행자 쇼핑 거리 · 카페와 상점'},
         {name:'Ocean Drive & Lummus Park',short:'17:30 · Ocean Drive',lat:25.7823,lng:-80.1300,type:'관광',desc:'Art Deco 거리 야경 · Ocean Drive와 Lummus Park 산책 및 저녁',image:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60'},
         {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'저녁 · 숙소 귀환',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'도보 또는 짧은 차량 이동으로 귀환 · 2박 예약'}
-      ],modes:['uber','flight','walk','car','walk','walk','walk','walk','walk']
+      ],modes:['uber','flight','train','bus','walk','walk','walk','walk','walk']
     },
     {
       date:'12.16',weekday:'수요일',area:'MIAMI BEACH → MIAMI',headline:'일출과 Biscayne Bay',caption:'해변 일출 · Vizcaya · Bayside · Millionaire’s Row 크루즈',accent:'#7cddde',
@@ -135,7 +135,7 @@ window.TRIP_DATA = {
         {name:'Miami International Airport',short:'12:00 목표 · MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12:00 전후 도착 목표 · Frontier F9 3059 오후 14:31 출발'},
         {name:'Hartsfield–Jackson Atlanta International Airport',short:'16:48 · ATL 도착',lat:33.6407,lng:-84.4277,type:'공항',desc:'Frontier F9 3059 · 오후 16:48 도착'},
         {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'저녁 · Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Courtyard 12/17~19 (2박) 예약 확정 · ATL에서 Uber로 이동 예정'}
-      ],modes:['walk','walk','walk','car','walk','flight','uber']
+      ],modes:['walk','walk','walk','bus','train','flight','uber']
     },
     {
       date:'12.18',weekday:'금요일',area:'ATLANTA',headline:'마지막 하루, 여유롭게',caption:'Atlanta sightseeing · 저녁 식사 · 출국 준비',accent:'#dfbea3',
