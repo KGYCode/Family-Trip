@@ -12,25 +12,26 @@ window.TRIP_DATA = {
     {date:'12.12', place:'Atlanta', detail:'North Georgia day trip', color:'#71ddd1'},
     {date:'12.13', place:'Chattanooga', detail:'Ruby Falls · Sunset Rock 일몰', color:'#8dbdf7'},
     {date:'12.14', place:'Chattanooga → Atlanta', detail:'Walnut Street Bridge · Riverfront', color:'#71ddd1'},
-    {date:'12.15', place:'Miami', detail:'F9 3442 · MIA 12:42 도착', color:'#f0b56e'},
-    {date:'12.16', place:'Miami', detail:'Vizcaya · Bay Cruise', color:'#f0b56e'},
-    {date:'12.17', place:'Atlanta', detail:'F9 3059 · ATL 16:48 도착', color:'#71ddd1'},
+    {date:'12.15', place:'Miami Beach', detail:'F9 3442 · Airport Express 150 · Ocean Drive', color:'#f0b56e'},
+    {date:'12.16', place:'Miami', detail:'07:00 일출 · Vizcaya · 15:00 Bay Cruise', color:'#f0b56e'},
+    {date:'12.17', place:'Atlanta', detail:'Beachwalk · Airport Express 150 · F9 3059', color:'#71ddd1'},
     {date:'12.18', place:'Atlanta', detail:'Atlanta sightseeing', color:'#71ddd1'},
     {date:'12.19', place:'Atlanta', detail:'ATL 공항 출국', color:'#71ddd1'}
   ],
   todos: [
     {label:'Chattanooga DoubleTree 예약 확정 · 12/13 16:00 체크인 / 12/14 11:00 체크아웃', group:'숙소', done:true},
-    {label:'Miami 숙소 결정 · 12/15~17 2박', group:'숙소', done:false},
+    {label:'Miami Beach Airbnb 12/15~17 (2박) 예약 완료 · 23번가 Pine Tree Drive 인근', group:'숙소', done:true},
     {label:'Atlanta Courtyard 3건 예약 확정 · 12/11–13, 12/14–15, 12/17–19 (총 5박)', group:'숙소', done:true},
     {label:'Atlanta Courtyard 분할 숙박 전후 체크아웃·재체크인 및 짐 보관 확인', group:'숙소', done:false},
     {label:'Frontier 왕복 항공편 예약 확정 · 12/15 F9 3442 / 12/17 F9 3059', group:'교통', done:true},
     {label:'Frontier 개인 소지품 외 기내수하물·위탁수하물 허용량 및 추가 구매 확인', group:'교통', done:false},
     {label:'Atlanta 호텔 ↔ ATL 공항 Uber 이동 계획', group:'교통', done:false},
-    {label:'Miami 공항 ↔ 호텔 Uber 동선 (숙소 확정 후)', group:'교통', done:false},
+    {label:'MIA 공항 ↔ Miami Beach 150번 Airport Express 버스 시간표·정류장 최종 확인', group:'교통', done:false},
     {label:'Montaluce Winery & Restaurant 식사 예약', group:'예약', done:false},
     {label:'Ruby Falls 12/13 오후 14:15 전후 Cave Walk 예약 (Sunset Rock 일몰 역산)', group:'예약', done:false},
     {label:'Sunset Rock 주차 및 일몰(17:30 전후) 확인', group:'확인', done:false},
-    {label:'Biscayne Bay 크루즈 운항시간 및 예약 확인', group:'예약', done:false},
+    {label:'12/16 Island Queen Millionaire’s Row 15:00 크루즈 예약 (미예약 · 14:15까지 승선권 교환)', group:'예약', done:false},
+    {label:'Miami Beach Airbnb 조기 체크인·짐 보관 및 12/17 체크아웃 시간 확인', group:'확인', done:false},
     {label:'12/19 출국편·공항 도착 목표시간 확인', group:'확인', done:false}
   ],
   days: [
@@ -86,40 +87,55 @@ window.TRIP_DATA = {
       ],modes:['car','walk','car']
     },
     {
-      date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI',headline:'비행기로 남쪽 바다로',caption:'Uber → ATL → 비행기 → MIA → Uber',accent:'#77d7cf',
+      date:'12.15',weekday:'화요일',area:'ATLANTA → MIAMI BEACH',headline:'바다와 Art Deco의 첫날',caption:'Airport Express 150 · Beachwalk · Lincoln Road · Ocean Drive',accent:'#77d7cf',
       hero:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60',
-      highlight:'Frontier F9 3442 · ATL 10:35 → MIA 12:42 · Miami 호텔 미정 · 현지 Uber',overnight:'Miami · 호텔 미정 (TODO)',
+      highlight:'F9 3442 · MIA 12:42 도착 · 무료 MIA Mover → 150번 Airport Express ($2.25/인) · Airbnb 2박 예약',
+      overnight:'Miami Beach · Pine Tree Drive 23번가 부근 Airbnb (12/15–17 2박 예약)',
       stops:[
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Courtyard 12/14~15 (1박) 예약 확정 · 체크아웃 후 Uber로 ATL 이동'},
-        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'12/15 Frontier F9 3442 · 오전 10:35 출발 · 공항 Uber 이동'},
-        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12/15 오후 12:42 도착 · 이후 Uber로 숙소 이동'},
-        {name:'Miami hotel (TBD)',short:'Miami 호텔 TBD',lat:25.7850,lng:-80.1340,type:'할 일',desc:'숙소 미정 · 지도상 South Beach 근처 임시 표시'},
-        {name:'Ocean Drive & Lummus Park',short:'Ocean Drive',lat:25.7823,lng:-80.1300,type:'CSI 테마',desc:'CSI: Miami 느낌의 Art Deco 건물·야자수·해변',image:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60'}
-      ],modes:['uber','flight','uber','walk']
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔 체크아웃',lat:33.8356,lng:-84.3251,type:'호텔',desc:'12/14~15 (1박) 예약 확정 · Uber로 ATL 공항 이동'},
+        {name:'Hartsfield–Jackson Atlanta International Airport',short:'10:35 · ATL 출발',lat:33.6407,lng:-84.4277,type:'공항',desc:'Frontier F9 3442 · 오전 10:35 출발'},
+        {name:'Miami International Airport',short:'12:42 · MIA 도착',lat:25.7954,lng:-80.2900,type:'공항',desc:'Frontier F9 3442 · 오후 12:42 도착 · 수하물 수령 후 무료 MIA Mover'},
+        {name:'Miami Airport Station',short:'13:30 전후 · 150번 탑승',mapQuery:'Miami International Airport Station, Miami, FL',type:'교통',desc:'무료 MIA Mover로 이동 → Route 150 Miami Beach Airport Express 버스 탑승 · 1인 편도 $2.25 · 실제 출발 시각 확인',url:'https://www.miamidade.gov/global/transportation/metrobus-routes-serving-mia.page'},
+        {name:'Collins Avenue & 22nd Street',short:'14:30 전후 · 하차',mapQuery:'Collins Avenue and 22nd Street, Miami Beach, FL',type:'교통',desc:'150번 버스 하차 후 숙소 부근까지 도보 약 10~15분(짐·교통에 따라 변동)'},
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'Airbnb · 짐 맡기기',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'12/15~17 2박 Airbnb 예약 · 조기 체크인 및 짐 보관은 호스트에게 확인 · 공개 지도에는 인근 교차로만 표시'},
+        {name:'Miami Beach Beachwalk',short:'15:30 · 해변 산책',mapQuery:'23rd Street Beachwalk, Miami Beach, FL',type:'해변',desc:'숙소 근처 Beachwalk 산책 · 해변과 야자수 경관'},
+        {name:'Lincoln Road',short:'16:30 · Lincoln Road',mapQuery:'Lincoln Road Mall, Miami Beach, FL',type:'관광',desc:'보행자 쇼핑 거리 · 카페와 상점'},
+        {name:'Ocean Drive & Lummus Park',short:'17:30 · Ocean Drive',lat:25.7823,lng:-80.1300,type:'관광',desc:'Art Deco 거리 야경 · Ocean Drive와 Lummus Park 산책 및 저녁',image:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60'},
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'저녁 · 숙소 귀환',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'도보 또는 짧은 차량 이동으로 귀환 · 2박 예약'}
+      ],modes:['uber','flight','walk','car','walk','walk','walk','walk','walk']
     },
     {
-      date:'12.16',weekday:'수요일',area:'MIAMI',headline:'정원, 바다, 스카이라인',caption:'Vizcaya (선택) · Biscayne Bay Cruise',accent:'#7cddde',
+      date:'12.16',weekday:'수요일',area:'MIAMI BEACH → MIAMI',headline:'일출과 Biscayne Bay',caption:'해변 일출 · Vizcaya · Bayside · Millionaire’s Row 크루즈',accent:'#7cddde',
       hero:'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/70c1dd2a481926607008ae24d87f72d3d0e64dec8c1ea885321ef108504bb969.png',
-      highlight:'Uber와 보트 · 일정은 여유롭게 · 일몰 크루즈 예약 확인',overnight:'Miami · 호텔 미정 (TODO)',
+      highlight:'06:40 해변 도착 → 07:00 전후 일출 · Island Queen 15:00 크루즈 예약 목표(미예약) · 14:15 매표소 도착',
+      overnight:'Miami Beach · Pine Tree Drive 23번가 부근 Airbnb (12/15–17 2박 예약)',
       stops:[
-        {name:'Miami hotel (TBD)',short:'Miami 호텔 TBD',lat:25.7850,lng:-80.1340,type:'할 일',desc:'호텔 위치 임시'},
-        {name:'Vizcaya Museum & Gardens',short:'Vizcaya 선택',lat:25.7445,lng:-80.2105,type:'정원',desc:'대저택과 정원 · 영어 해설 없이도 풍경 감상',image:'https://assets.simpleviewinc.com/sv-alhi/image/upload/c_fill%2Ch_640%2Cq_75%2Cw_1200/v1/cms_resources/clients/alhitx/vizcaya_video_home_1_copy_1400x747_9920e885-fd9a-4e8d-b0ab-383e1f209bd0.jpg',url:'https://vizcaya.org/'},
-        {name:'Bayside Marketplace',short:'Bayside',lat:25.7785,lng:-80.1869,type:'관광',desc:'크루즈 승선장 · 바다 산책과 선착장 구경'},
-        {name:'Biscayne Bay Cruise',short:'Bay Cruise',lat:25.7686,lng:-80.1760,type:'보트',desc:'바다 위에서 마이애미 스카이라인과 섬 감상 · 경로 핀은 개략',image:'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/70c1dd2a481926607008ae24d87f72d3d0e64dec8c1ea885321ef108504bb969.png',url:'https://www.islandqueencruises.com/'},
-        {name:'Miami hotel (TBD)',short:'호텔 귀환',lat:25.7850,lng:-80.1340,type:'할 일',desc:'Uber로 돌아와 휴식'}
-      ],modes:['uber','uber','boat','uber']
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'06:25 · 숙소 출발',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'아침 일출을 위해 도보 출발 · 날씨 확인'},
+        {name:'Miami Beach Beachwalk / sunrise',short:'06:40~07:15 · 일출',mapQuery:'23rd Street Beachwalk, Miami Beach, FL',type:'일출',desc:'12/16 일출 약 07:00 EST · 수평선과 해변 감상 · 날씨에 따라 변동'},
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'07:30~09:00 · 아침',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'아침 식사 및 휴식 후 본토 관광으로 이동'},
+        {name:'Vizcaya Museum & Gardens',short:'09:45~12:00 · Vizcaya',lat:25.7445,lng:-80.2105,type:'정원',desc:'수요일 09:30~16:30 운영 · 정원과 해안 저택 산책 · 입장권 확인',image:'https://assets.simpleviewinc.com/sv-alhi/image/upload/c_fill%2Ch_640%2Cq_75%2Cw_1200/v1/cms_resources/clients/alhitx/vizcaya_video_home_1_copy_1400x747_9920e885-fd9a-4e8d-b0ab-383e1f209bd0.jpg',url:'https://vizcaya.org/visit/'},
+        {name:'Downtown Miami',short:'12:00~13:30 · 점심',mapQuery:'Downtown Miami, FL',type:'식사',desc:'Vizcaya에서 Downtown으로 이동 후 점심 · 식당 미정'},
+        {name:'Bayside Marketplace',short:'13:30~14:15 · Bayside',lat:25.7785,lng:-80.1869,type:'관광',desc:'Bayside Marketplace 구경 · 15:00 크루즈 이용 시 14:15까지 Island Queen 매표소에서 승선권 교환'},
+        {name:'Island Queen Millionaire’s Row Cruise',short:'15:00~16:30 · 관광 크루즈',mapQuery:'Island Queen Cruises, 401 Biscayne Blvd, Miami, FL',type:'보트',desc:'90분 Biscayne Bay 관광 · 15:00 출항편 예약 목표(미예약) · 성인 $35/인, 3명 $105 · 바우처는 14:15까지 매표소에서 승선권으로 교환',url:'https://islandqueencruises.com/cruises/millionaires-row-sightseeing-cruise/'},
+        {name:'Bayfront Park',short:'16:30~17:30 · 강변 산책',mapQuery:'Bayfront Park, Miami, FL',type:'산책',desc:'크루즈 후 Bayfront 주변 산책 · 체력에 따라 생략 가능'},
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'저녁 · 숙소 귀환',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'Uber로 Miami Beach 귀환'}
+      ],modes:['walk','walk','uber','uber','walk','boat','walk','uber']
     },
     {
-      date:'12.17',weekday:'목요일',area:'MIAMI → ATLANTA',headline:'바다와 작별하고 귀환',caption:'시간이 맞으면 South Pointe Park · 비행기로 Atlanta',accent:'#99d3f1',
-      hero:'https://assets.simpleviewinc.com/sv-alhi/image/upload/c_fill%2Ch_640%2Cq_75%2Cw_1200/v1/cms_resources/clients/alhitx/vizcaya_video_home_1_copy_1400x747_9920e885-fd9a-4e8d-b0ab-383e1f209bd0.jpg',
-      highlight:'Frontier F9 3059 · MIA 14:31 → ATL 16:48 · Miami 이동 Uber',overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory (예약 확정)',
+      date:'12.17',weekday:'목요일',area:'MIAMI BEACH → ATLANTA',headline:'해변과 작별하고 귀환',caption:'아침 Beachwalk · Airport Express 150 · Frontier 항공편',accent:'#99d3f1',
+      hero:'https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt89aa53706d11e51d/6724b026d2da22b6a6bc2a99/Miami_South_Beach_Art_Deco_Welcome_Center_by_D_Ramey_Logan-LOWRES.jpg?auto=webp&crop=smart&disable=upscale&fit=crop&quality=60',
+      highlight:'F9 3059 · MIA 14:31 출발 → ATL 16:48 · 10:30~11:00 숙소 출발 목표 · 버스 지연 시 Uber 대안',
+      overnight:'Atlanta · Courtyard by Marriott Atlanta Executive Park/Emory (예약 확정)',
       stops:[
-        {name:'Miami hotel (TBD)',short:'Miami 호텔',lat:25.7850,lng:-80.1340,type:'할 일',desc:'체크아웃 · 숙소 위치 확정 후 업데이트'},
-        {name:'South Pointe Park (optional)',short:'South Pointe 선택',lat:25.7662,lng:-80.1345,type:'전망',desc:'바다·대형 크루즈선 감상 · 항공편 시간상 생략 가능'},
-        {name:'Miami International Airport',short:'MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12/17 Frontier F9 3059 · 오후 2:31 출발 · 공항 Uber 이동'},
-        {name:'Hartsfield–Jackson Atlanta International Airport',short:'ATL 공항',lat:33.6407,lng:-84.4277,type:'공항',desc:'12/17 오후 4:48 도착 · Uber로 호텔 이동'},
-        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Courtyard 12/17~19 (2박) 예약 확정 · ATL에서 Uber 귀환 예정'}
-      ],modes:['uber','uber','flight','uber']
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'08:00 · 아침',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'아침 식사 후 09:00~10:00 Beachwalk 산책 · Airbnb 체크아웃 시각 확인'},
+        {name:'Miami Beach Beachwalk',short:'09:00~10:00 · 산책',mapQuery:'23rd Street Beachwalk, Miami Beach, FL',type:'해변',desc:'해변 산책 후 숙소로 돌아가 짐 정리'},
+        {name:'Miami Beach Airbnb · Pine Tree Drive area',short:'10:30~11:00 · 체크아웃',mapQuery:'Pine Tree Drive and 23rd Street, Miami Beach, FL',type:'숙소',desc:'Airbnb 체크아웃 및 공항행 150번 버스 이용 · 실제 체크아웃 시간 호스트 확인'},
+        {name:'Collins Avenue & 22nd Street',short:'150번 Airport Express',mapQuery:'Collins Avenue and 22nd Street, Miami Beach, FL',type:'교통',desc:'공항 방면 정류장과 출발 시각 사전 확인 · 여유 있게 이동 · 늦어지면 Uber',url:'https://www.miamidade.gov/global/transportation/metrobus-routes-serving-mia.page'},
+        {name:'Miami Airport Station',short:'MIA Mover 환승',mapQuery:'Miami International Airport Station, Miami, FL',type:'교통',desc:'공항행 150번 버스 하차 → 무료 MIA Mover 탑승'},
+        {name:'Miami International Airport',short:'12:00 목표 · MIA 공항',lat:25.7954,lng:-80.2900,type:'공항',desc:'12:00 전후 도착 목표 · Frontier F9 3059 오후 14:31 출발'},
+        {name:'Hartsfield–Jackson Atlanta International Airport',short:'16:48 · ATL 도착',lat:33.6407,lng:-84.4277,type:'공항',desc:'Frontier F9 3059 · 오후 16:48 도착'},
+        {name:'Courtyard by Marriott Atlanta Executive Park/Emory',short:'저녁 · Atlanta 호텔',lat:33.8356,lng:-84.3251,type:'호텔',desc:'Courtyard 12/17~19 (2박) 예약 확정 · ATL에서 Uber로 이동 예정'}
+      ],modes:['walk','walk','walk','car','walk','flight','uber']
     },
     {
       date:'12.18',weekday:'금요일',area:'ATLANTA',headline:'마지막 하루, 여유롭게',caption:'Atlanta sightseeing · 저녁 식사 · 출국 준비',accent:'#dfbea3',
